@@ -1,0 +1,4 @@
+<p>parent works!</p>
+<input type="text" #nameref >
+<button (click)="addName(nameref.value) ;nameref.value  = '';childRef.refresh()" > addd name </button>
+<app-child #childRef [names]="names"></app-child>

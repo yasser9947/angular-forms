@@ -1,0 +1,31 @@
+<p>pipe-study works!</p>
+
+
+<p> lower case  : {{"helow world "| lowercase}}</p>
+<p> lower case  : {{"helow world "| uppercase}}</p>
+<p> lower case  : {{"helow world "| titlecase}}</p>
+<p> lower case  : {{"helow world "| slice :2:
+  5}}</p>
+<ul>
+  <li *ngFor="let name of names | slice: 0:1">{{name}}</li>
+</ul>
+
+<p> json pipe {{objecr | json}}</p>
+<p> {{currentDate  | date : "short"}}</p>
+<p> {{currentDate  | date : "shortDate"}}</p>
+<p> {{currentDate  | date : "shortTime"}}</p>
+<p> {{currentDate  | date : "shortTime" :"+6"}}</p>
+<p> {{currentDate  | date : "medium":"ar-SA"}}</p>
+<p> {{currentDate  | date : "long":"ar-SA"}}</p>
+<p> {{currentDate  | date : "full":"+3":"ar-SA"}}</p>
+<hr>
+<p> {{currentDate  | date : "d/yyyy/M-EEEE-a hh-m"}}</p>
+
+<!--
+short
+meduim
+long
+full
+-->
+<hr>
+<!--async-->
