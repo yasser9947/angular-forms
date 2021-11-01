@@ -1,57 +1,58 @@
 <p>forms works!</p>
-<label> Favote color :</label>
-<input type="text"  [formControl]="faveColorControl" />
-<br>
-<br>
-<hr>
-<label > name : </label>
-<input name="name" type="text" [formControl]="name">
-<br>
-{{name.value}}
-<hr>
+<!--<label> Favote color :</label>-->
+<!--<input type="text"  [formControl]="faveColorControl" />-->
+<!--<br>-->
+<!--<br>-->
+<!--<hr>-->
+<!--<label > name : </label>-->
+<!--<input name="name" type="text" [formControl]="name">-->
+<!--<br>-->
+<!--{{name.value}}-->
+<!--<hr>-->
 
-<label > update value
-  <button (click)="updateNAme()"> update name </button>
-</label>
+<!--<label > update value-->
+<!--  <button (click)="updateNAme()"> update name </button>-->
+<!--</label>-->
 
-<hr>
-<form
-  (ngSubmit)="onSubmit()"
-  [formGroup]="profileForm"
->
-  <label > first name
-    <input
-      formControlName="firstName"
-      type="text">
-  </label>
-  <br>
-  <label > last name
-    <input
-      formControlName="lastName"
-      type="text">
-  </label>
-  <div formGroupName="address">
-    <label > city
-      <input
-        formControlName="city"
-        type="text">
-    </label>
-    <label > street
-      <input
-        formControlName="street"
-        type="text">
-    </label>
-  </div>
+<!--<hr>-->
+<!--<form-->
+<!--  (ngSubmit)="onSubmit()"-->
+<!--  [formGroup]="profileForm"-->
+<!--&gt;-->
+<!--  <label > first name-->
+<!--    <input-->
+<!--      formControlName="firstName"-->
+<!--      type="text">-->
+<!--  </label>-->
+<!--  <br>-->
+<!--  <label > last name-->
+<!--    <input-->
+<!--      formControlName="lastName"-->
+<!--      type="text">-->
+<!--  </label>-->
+<!--  <div formGroupName="address">-->
+<!--    <label > city-->
+<!--      <input-->
+<!--        formControlName="city"-->
+<!--        type="text">-->
+<!--    </label>-->
+<!--    <label > street-->
+<!--      <input-->
+<!--        formControlName="street"-->
+<!--        type="text">-->
+<!--    </label>-->
+<!--  </div>-->
 
-  <br>
-  <button type ="submit">
-    submit
-  </button>
-  <button
-    (click)="updateProfile()"
-    type="button">
+<!--  <br>-->
+<!--  <button type ="submit">-->
+<!--    submit-->
+<!--  </button>-->
+<!--  <button-->
+<!--    (click)="updateProfile()"-->
+<!--    type="button">-->
 
-    update
-  </button>
-</form>
+<!--    update-->
+<!--  </button>-->
+<!--</form>-->
 
+<app-validation></app-validation>

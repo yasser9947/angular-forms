@@ -1,0 +1,59 @@
+<p>form-again works!</p>
+ho
+<input type="text" [formControl] = "myColor" >
+<!--{{myColor | json}}-->
+
+<!--form group-->
+<hr>
+<form  [formGroup]="profileForm"
+  (ngSubmit)="submut()"
+>
+
+  <label> first name :
+    <input type="text"
+    formControlName="firstName"
+    >
+  </label>
+  <br>
+  <br>
+  <label> last  name :
+    <input type="text"
+           formControlName="lastName"
+    >
+  </label>
+  <br>
+  <button> submit</button>
+  <button type="button"
+    (click)="update()"
+  > update </button>
+</form>
+
+<hr>
+<h2> form builder </h2>
+<form
+[formGroup]="coolForm">
+  <label> color :
+    <input type="text"
+           formControlName="color" >
+  </label>
+  <label> love  :
+    <input type="text"
+           formControlName="love" >
+  </label>
+  <div formGroupName="address" >
+    <label> city  :
+      <input type="text"
+             formControlName="love" >
+    </label>
+    <label> street  :
+      <input type="text"
+             formControlName="love" >
+    </label>
+  </div>
+  <button
+  (click)="formBuilderSubmit()"
+  > submit </button>
+
+</form>
+
+

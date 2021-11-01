@@ -9,12 +9,13 @@ import { PipeStudyComponent } from './pipe-study/pipe-study.component';
 import { FormsComponent } from './forms/forms.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ValidationComponent } from './forms/validation/validation.component';
+import { FormAgainComponent } from './form-again/form-again.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildComponent , HighlightDerctive, PipeStudyComponent, FormsComponent, ValidationComponent
+    ChildComponent , HighlightDerctive, PipeStudyComponent, FormsComponent, ValidationComponent, FormAgainComponent
   ],
   imports: [
     BrowserModule , ReactiveFormsModule,
