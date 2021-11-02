@@ -10,12 +10,13 @@ import { FormsComponent } from './forms/forms.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ValidationComponent } from './forms/validation/validation.component';
 import { FormAgainComponent } from './form-again/form-again.component';
+import { FormAgainValidetorsComponent } from './form-again-validetors/form-again-validetors.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
-    ChildComponent , HighlightDerctive, PipeStudyComponent, FormsComponent, ValidationComponent, FormAgainComponent
+    ChildComponent , HighlightDerctive, PipeStudyComponent, FormsComponent, ValidationComponent, FormAgainComponent, FormAgainValidetorsComponent
   ],
   imports: [
     BrowserModule , ReactiveFormsModule,

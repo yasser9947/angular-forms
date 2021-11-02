@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormControl, FormGroup} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-form-again',
@@ -22,7 +22,7 @@ export class FormAgainComponent implements OnInit {
     coolForm: FormGroup = new FormGroup({});
   constructor(private fb : FormBuilder) {
      this.coolForm =  this.fb.group({
-       color:"red",
+       color:["" , [Validators.required , Validators.email ,]],
        love : "",
         address : this.fb.group({
          city : "" ,
