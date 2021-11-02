@@ -10,6 +10,11 @@
     <input type="text"
            formControlName="color" >
   </label>
+  <ng-container
+  *ngIf="!color.invalid">
+  <span> woow</span>
+  </ng-container>
+  <br>
   <label> love  :
     <input type="text"
            formControlName="love" >
