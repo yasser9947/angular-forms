@@ -1,0 +1,35 @@
+<p>form-again works!</p>
+<!--{{myColor | json}}-->
+<!--form group-->
+<hr>
+<hr>
+<h2> form builder </h2>
+<form
+  [formGroup]="coolForm">
+  <label> color :
+    <input type="text"
+           formControlName="color" >
+  </label>
+  <label> love  :
+    <input type="text"
+           formControlName="love" >
+  </label>
+  <div formGroupName="address" >
+    <label> city  :
+      <input type="text"
+             formControlName="city" >
+    </label>
+    <label> street  :
+      <input type="text"
+             formControlName="street" >
+    </label>
+  </div>
+  <button
+    (click)="formBuilderSubmit()"
+  > submit </button>
+
+  {{coolForm.status}}
+
+</form>
+
+
